@@ -1,0 +1,16 @@
+name: 'Run Postman Collection'
+description: 'Run Postman collections using Newman'
+inputs:
+  collection:
+    description: 'Path to the Postman collection file'
+    required: true
+    default: 'collection.json'
+  environment:
+    description: 'Path to the Postman environment file (optional)'
+    required: false
+  report-file:
+    description: 'Path to the output JUnit report file'
+    required: true
+runs:
+  using: 'python'
+  main: 'main.py'
