@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /action
 
 # Copy the Python script and requirements file
-COPY main.py .
+COPY test_api_xpress/ .
 
 # Install dependencies
 RUN pip install requests
