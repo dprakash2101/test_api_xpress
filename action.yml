@@ -12,5 +12,5 @@ inputs:
     description: 'Path to the output JUnit report file'
     required: true
 runs:
-  using: 'python'
-  main: 'main.py'
+  using: 'docker'
+  image: 'Dockerfile'
