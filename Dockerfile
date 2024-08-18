@@ -6,10 +6,9 @@ WORKDIR /action
 
 # Copy the Python script and requirements file
 COPY main.py .
-COPY requirements.txt .
 
 # Install dependencies
-RUN pip install newman
+RUN pip install requests
 
 # Set the entry point to the Python script
 ENTRYPOINT ["python", "main.py"]

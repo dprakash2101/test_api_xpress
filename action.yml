@@ -1,16 +1,13 @@
-name: 'Run Postman Collection'
-description: 'Run Postman collections using Newman'
+name: 'Test API Xpress'
+description: 'Run Postman collections and upload results using Python.'
 inputs:
   collection:
-    description: 'Path to the Postman collection file'
+    description: 'Path to the Postman collection JSON file.'
     required: true
-    default: 'collection.json'
-  environment:
-    description: 'Path to the Postman environment file (optional)'
-    required: false
   report-file:
-    description: 'Path to the output JUnit report file'
+    description: 'Path to save the report file.'
     required: true
+    default: 'results/report.json'
 runs:
   using: 'docker'
   image: 'Dockerfile'
